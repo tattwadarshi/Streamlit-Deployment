@@ -6,6 +6,8 @@ Data were extracted from images that were taken from genuine and forged banknote
 
 **The main idea is to predict whether a bank note is authentic.**
 
+**Link** - https://streamlit-app-tattwa.herokuapp.com/
+
 **The entire project includes the following steps:**
 1. Building a machine learning model for detecting whether a bank note is authentic. 
 2. Building A Flask App For A Bank Note Authentication. It will use the trained ML pipeline to generate predictions on new data points in real-time.
