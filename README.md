@@ -21,6 +21,12 @@ Data were extracted from images that were taken from genuine and forged banknote
 **Important Note:**
 **At the end of the day, docker is just a file with a few lines of instructions that are saved under your project folder with the name “Dockerfile”.**
 
+**To deploy on Heroku you need two things:**
+
++ requirements.txt file
+
++ Procfile
+
 **Procfile**
 For Heroku you need to say which is the first file bascially you need to execute. 
 web:gunicorn app: app
