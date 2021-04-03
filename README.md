@@ -22,10 +22,26 @@ Data were extracted from images that were taken from genuine and forged banknote
 **At the end of the day, docker is just a file with a few lines of instructions that are saved under your project folder with the name “Dockerfile”.**
 
 **To deploy on Heroku you need two things:**
-
 + requirements.txt file
-
 + Procfile
+
+**How to Get the requirements.txt file**
+
+# Method 1: using pip
+pip freeze > requirements.txt
+
+# Method 2: using pipreqs (recommended)
++ First install pipreqs
+pip install pipreqs
++ Second use pipreqs to get the requirements.txt file of any project
+pipreqs yourmlapp_folder
+
+**For the  procfile can I simply use: web: gunicorn app:app?**
++ What to Put inside the Procfile
++ web: gunicorn app:app
+
+**should the static and templates folder remain the same for deployment as the one we prepared during Productionization?**
++ Yes,  you will have to push them too to github
 
 **Procfile**
 For Heroku you need to say which is the first file bascially you need to execute. 
